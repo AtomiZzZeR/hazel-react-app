@@ -1,10 +1,9 @@
-import React from 'react';
-import { AppRouter } from './components/AppRouter';
+import { Layout } from './components/Layout';
 
 const App = () => {
   return (
     <>
-      <AppRouter />
+      <Layout />
     </>
   );
 };

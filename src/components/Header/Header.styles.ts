@@ -1,37 +1,35 @@
 import styled from 'styled-components';
 
-const Header = styled.header``;
+const Wrapper = styled.header``;
 
 const Container = styled.div`
-  width: 1156px;
+  max-width: 1166px;
   margin: 0px auto;
 `;
 
-const InlineHeader = styled.div`
+const Content = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0px 172px;
-  padding: 34px 0px;
   height: 136px;
+  padding: 34px 178px;
 `;
 
-const Logo = styled.img`
-  display: inline-block;
-`;
-
-const Link = styled.span`
-  display: inline-block;
+const Link = styled.a`
   padding: 10px;
   font-weight: 500;
+  font-size: 1.063rem;
+  line-height: 152.941%;
 `;
 
+const Logo = styled.img``;
+
 const StyledHeader = {
-  Header,
+  Wrapper,
   Container,
-  InlineHeader,
-  Logo,
+  Content,
   Link,
+  Logo,
 };
 
 export default StyledHeader;

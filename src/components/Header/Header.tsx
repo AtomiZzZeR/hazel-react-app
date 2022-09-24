@@ -1,30 +1,20 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
 import Styled from './Header.styles';
 
 const Header = () => {
   return (
-    <Styled.Header>
+    <Styled.Wrapper>
       <Styled.Container>
-        <Styled.InlineHeader>
-          <Link to={'/'}>
-            <Styled.Link>Home</Styled.Link>
-          </Link>
-          <Link to={'/about'}>
-            <Styled.Link>About me</Styled.Link>
-          </Link>
-          <Link to={'/'}>
+        <Styled.Content>
+          <Styled.Link href={'#'}>Home</Styled.Link>
+          <Styled.Link href={'#'}>About me</Styled.Link>
+          <Styled.Link href={'#'}>
             <Styled.Logo src={'../images/site-logo.svg'} alt={'Site logo'} />
-          </Link>
-          <Link to={'/work'}>
-            <Styled.Link>Work</Styled.Link>
-          </Link>
-          <Link to={'/contact'}>
-            <Styled.Link>Contact</Styled.Link>
-          </Link>
-        </Styled.InlineHeader>
+          </Styled.Link>
+          <Styled.Link href={'#'}>Work</Styled.Link>
+          <Styled.Link href={'#'}>Contact</Styled.Link>
+        </Styled.Content>
       </Styled.Container>
-    </Styled.Header>
+    </Styled.Wrapper>
   );
 };
 

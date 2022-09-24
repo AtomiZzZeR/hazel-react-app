@@ -12,10 +12,8 @@ const root = createRoot(container);
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <BrowserRouter>
-        <GlobalStyles />
-        <App />
-      </BrowserRouter>
+      <GlobalStyles />
+      <App />
     </Provider>
   </React.StrictMode>
 );
